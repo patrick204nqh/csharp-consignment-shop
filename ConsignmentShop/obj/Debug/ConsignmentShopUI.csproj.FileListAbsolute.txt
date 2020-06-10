@@ -1,0 +1,13 @@
+C:\Users\Dell\source\repos\ConsignmentShop\bin\Debug\ConsignmentShop.exe.config
+C:\Users\Dell\source\repos\ConsignmentShop\bin\Debug\ConsignmentShop.exe
+C:\Users\Dell\source\repos\ConsignmentShop\bin\Debug\ConsignmentShop.pdb
+C:\Users\Dell\source\repos\ConsignmentShop\obj\Debug\ConsignmentShopUI.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\ConsignmentShop\obj\Debug\ConsignmentShop.ConsignmentShop.resources
+C:\Users\Dell\source\repos\ConsignmentShop\obj\Debug\ConsignmentShop.Properties.Resources.resources
+C:\Users\Dell\source\repos\ConsignmentShop\obj\Debug\ConsignmentShopUI.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\ConsignmentShop\obj\Debug\ConsignmentShopUI.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\ConsignmentShop\obj\Debug\ConsignmentShop.exe
+C:\Users\Dell\source\repos\ConsignmentShop\obj\Debug\ConsignmentShop.pdb
+C:\Users\Dell\source\repos\ConsignmentShop\bin\Debug\ConsignmentShopLibrary.dll
+C:\Users\Dell\source\repos\ConsignmentShop\bin\Debug\ConsignmentShopLibrary.pdb
+C:\Users\Dell\source\repos\ConsignmentShop\obj\Debug\ConsignmentShopUI.csproj.CopyComplete
