@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace ConsignmentShop
 {
     public partial class ConsignmentShop : Form
     {
@@ -17,8 +17,10 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
+        private void ConsignmentShop_Load(object sender, EventArgs e)
         {
+
+
 
         }
     }

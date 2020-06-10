@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace ConsignmentShop
 {
     partial class ConsignmentShop
     {
@@ -30,14 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // LoginForm
+            // ConsignmentShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "LoginForm";
-            this.Text = "LoginForm";
-            this.Load += new System.EventHandler(this.LoginForm_Load);
+            this.Enabled = false;
+            this.Name = "ConsignmentShop";
+            this.Text = "Consignment Shop";
+            this.Load += new System.EventHandler(this.ConsignmentShop_Load);
             this.ResumeLayout(false);
 
         }
@@ -45,3 +46,4 @@
         #endregion
     }
 }
+
