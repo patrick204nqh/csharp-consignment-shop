@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.headerText = new System.Windows.Forms.Label();
-            this.ItemsListbox = new System.Windows.Forms.ListBox();
-            this.ItemsListboxLabel = new System.Windows.Forms.Label();
+            this.itemsListbox = new System.Windows.Forms.ListBox();
+            this.itemsListboxLabel = new System.Windows.Forms.Label();
             this.addToCart = new System.Windows.Forms.Button();
             this.shoppingCartListboxLabel = new System.Windows.Forms.Label();
             this.shoppingCartListbox = new System.Windows.Forms.ListBox();
@@ -48,29 +48,29 @@
             this.headerText.Text = "Consignment Shop";
             this.headerText.Click += new System.EventHandler(this.headerText_Click);
             // 
-            // ItemsListbox
+            // itemsListbox
             // 
-            this.ItemsListbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ItemsListbox.FormattingEnabled = true;
-            this.ItemsListbox.ItemHeight = 16;
-            this.ItemsListbox.Location = new System.Drawing.Point(15, 74);
-            this.ItemsListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ItemsListbox.Name = "ItemsListbox";
-            this.ItemsListbox.Size = new System.Drawing.Size(184, 132);
-            this.ItemsListbox.TabIndex = 1;
-            this.ItemsListbox.SelectedIndexChanged += new System.EventHandler(this.ItemsListbox_SelectedIndexChanged);
+            this.itemsListbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemsListbox.FormattingEnabled = true;
+            this.itemsListbox.ItemHeight = 16;
+            this.itemsListbox.Location = new System.Drawing.Point(15, 74);
+            this.itemsListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.itemsListbox.Name = "itemsListbox";
+            this.itemsListbox.Size = new System.Drawing.Size(184, 132);
+            this.itemsListbox.TabIndex = 1;
+            this.itemsListbox.SelectedIndexChanged += new System.EventHandler(this.ItemsListbox_SelectedIndexChanged);
             // 
-            // ItemsListboxLabel
+            // itemsListboxLabel
             // 
-            this.ItemsListboxLabel.AutoSize = true;
-            this.ItemsListboxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ItemsListboxLabel.Location = new System.Drawing.Point(12, 56);
-            this.ItemsListboxLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ItemsListboxLabel.Name = "ItemsListboxLabel";
-            this.ItemsListboxLabel.Size = new System.Drawing.Size(86, 16);
-            this.ItemsListboxLabel.TabIndex = 2;
-            this.ItemsListboxLabel.Text = "Store Items";
-            this.ItemsListboxLabel.Click += new System.EventHandler(this.label1_Click);
+            this.itemsListboxLabel.AutoSize = true;
+            this.itemsListboxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemsListboxLabel.Location = new System.Drawing.Point(12, 56);
+            this.itemsListboxLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.itemsListboxLabel.Name = "itemsListboxLabel";
+            this.itemsListboxLabel.Size = new System.Drawing.Size(86, 16);
+            this.itemsListboxLabel.TabIndex = 2;
+            this.itemsListboxLabel.Text = "Store Items";
+            this.itemsListboxLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // addToCart
             // 
@@ -125,8 +125,8 @@
             this.Controls.Add(this.shoppingCartListboxLabel);
             this.Controls.Add(this.shoppingCartListbox);
             this.Controls.Add(this.addToCart);
-            this.Controls.Add(this.ItemsListboxLabel);
-            this.Controls.Add(this.ItemsListbox);
+            this.Controls.Add(this.itemsListboxLabel);
+            this.Controls.Add(this.itemsListbox);
             this.Controls.Add(this.headerText);
             this.Enabled = false;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -142,8 +142,8 @@
         #endregion
 
         private System.Windows.Forms.Label headerText;
-        private System.Windows.Forms.ListBox ItemsListbox;
-        private System.Windows.Forms.Label ItemsListboxLabel;
+        private System.Windows.Forms.ListBox itemsListbox;
+        private System.Windows.Forms.Label itemsListboxLabel;
         private System.Windows.Forms.Button addToCart;
         private System.Windows.Forms.Label shoppingCartListboxLabel;
         private System.Windows.Forms.ListBox shoppingCartListbox;

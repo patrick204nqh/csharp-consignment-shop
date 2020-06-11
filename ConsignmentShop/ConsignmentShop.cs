@@ -18,10 +18,38 @@ namespace ConsignmentShop
         public ConsignmentShop()
         {
             InitializeComponent();
+            SetupData();
         }
 
         private void SetupData()
         {
+            /*Vendor demoVendor = new Vendor();
+
+            demoVendor.FirstName = "Karl";
+            demoVendor.LastName = "Patrick";
+            demoVendor.Commission = .5;
+
+            store.Vendors.Add(demoVendor);
+
+            demoVendor = new Vendor();
+
+            demoVendor.FirstName = "Kevin";
+            demoVendor.LastName = "Smith";
+            demoVendor.Commission = .5;
+
+            store.Vendors.Add(demoVendor);*/
+
+            store.Vendors.Add(new Vendor
+            {
+                FirstName = "Bill",
+                LastName = "Smith",
+            });
+            store.Vendors.Add(new Vendor
+            {
+                FirstName = "Kevin",
+                LastName = "Smith",
+            });
+
 
         }
 
