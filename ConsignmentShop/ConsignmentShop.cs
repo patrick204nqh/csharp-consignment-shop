@@ -23,22 +23,6 @@ namespace ConsignmentShop
 
         private void SetupData()
         {
-            /*Vendor demoVendor = new Vendor();
-
-            demoVendor.FirstName = "Karl";
-            demoVendor.LastName = "Patrick";
-            demoVendor.Commission = .5;
-
-            store.Vendors.Add(demoVendor);
-
-            demoVendor = new Vendor();
-
-            demoVendor.FirstName = "Kevin";
-            demoVendor.LastName = "Smith";
-            demoVendor.Commission = .5;
-
-            store.Vendors.Add(demoVendor);*/
-
             store.Vendors.Add(new Vendor
             {
                 FirstName = "Bill",
@@ -49,8 +33,35 @@ namespace ConsignmentShop
                 FirstName = "Kevin",
                 LastName = "Smith",
             });
-
-
+            store.Items.Add(new Item
+            {
+                Title = "Moby Dick",
+                Description = "A book about a whale",
+                Price = 4.50M,
+                Owner = store.Vendors[0]
+            });
+            store.Items.Add(new Item
+            {
+                Title = "A tale of two cities",
+                Description = "A book about a revolution",
+                Price = 3.80M,
+                Owner = store.Vendors[1]
+            });
+            store.Items.Add(new Item
+            {
+                Title = "Harry Potter Book 1",
+                Description = "A book about a boy",
+                Price = 5.20M,
+                Owner = store.Vendors[2]
+            });
+            store.Items.Add(new Item
+            {
+                Title = "Jane Eyre",
+                Description = "A book about a girl",
+                Price = 1.50M,
+                Owner = store.Vendors[3]
+            });
+            store.Name = "Seconds are Better";
         }
 
         private void ConsignmentShop_Load(object sender, EventArgs e)
