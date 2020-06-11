@@ -54,7 +54,7 @@
             this.itemsListbox.FormattingEnabled = true;
             this.itemsListbox.ItemHeight = 16;
             this.itemsListbox.Location = new System.Drawing.Point(15, 74);
-            this.itemsListbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.itemsListbox.Margin = new System.Windows.Forms.Padding(2);
             this.itemsListbox.Name = "itemsListbox";
             this.itemsListbox.Size = new System.Drawing.Size(184, 132);
             this.itemsListbox.TabIndex = 1;
@@ -76,12 +76,13 @@
             // 
             this.addToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addToCart.Location = new System.Drawing.Point(203, 116);
-            this.addToCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addToCart.Margin = new System.Windows.Forms.Padding(2);
             this.addToCart.Name = "addToCart";
             this.addToCart.Size = new System.Drawing.Size(105, 32);
             this.addToCart.TabIndex = 3;
             this.addToCart.Text = "Add To Cart  >";
             this.addToCart.UseVisualStyleBackColor = true;
+            this.addToCart.Click += new System.EventHandler(this.addToCart_Click);
             // 
             // shoppingCartListboxLabel
             // 
@@ -115,6 +116,7 @@
             this.makePurchase.TabIndex = 6;
             this.makePurchase.Text = "Purchase";
             this.makePurchase.UseVisualStyleBackColor = true;
+            this.makePurchase.Click += new System.EventHandler(this.makePurchase_Click);
             // 
             // ConsignmentShop
             // 

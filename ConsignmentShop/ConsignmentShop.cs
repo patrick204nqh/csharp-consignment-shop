@@ -14,11 +14,26 @@ namespace ConsignmentShop
     public partial class ConsignmentShop : Form
     {
         private Store store = new Store();
+        private List<Item> shoppingCartData = new List<Item>();
+        BindingSource itemsBinding = new BindingSource();
+        BindingSource cartBinding = new BindingSource();
 
         public ConsignmentShop()
         {
             InitializeComponent();
             SetupData();
+
+            itemsBinding.DataSource = store.Items.Where(x => x.Sold == false).ToList();
+            itemsListbox.DataSource = itemsBinding;
+
+            itemsListbox.DisplayMember = "Display";
+            itemsListbox.ValueMember = "Display";
+
+            cartBinding.DataSource = shoppingCartData;
+            shoppingCartListbox.DataSource = cartBinding;
+
+            shoppingCartListbox.DisplayMember = "Display";
+            shoppingCartListbox.ValueMember = "Display";
         }
 
         private void SetupData()
@@ -52,14 +67,14 @@ namespace ConsignmentShop
                 Title = "Harry Potter Book 1",
                 Description = "A book about a boy",
                 Price = 5.20M,
-                Owner = store.Vendors[2]
+                Owner = store.Vendors[0]
             });
             store.Items.Add(new Item
             {
                 Title = "Jane Eyre",
                 Description = "A book about a girl",
                 Price = 1.50M,
-                Owner = store.Vendors[3]
+                Owner = store.Vendors[1]
             });
             store.Name = "Seconds are Better";
         }
@@ -82,6 +97,38 @@ namespace ConsignmentShop
         private void headerText_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void addToCart_Click(object sender, EventArgs e)
+        {
+            // MessageBox.Show("I have been clicked");
+
+            // Figure out what is selected from the items list
+            // Copy that item to the shopping cart
+            // Do we remove the item from the items list? - no
+            Item selectedItem = (Item)itemsListbox.SelectedItem;
+
+            shoppingCartData.Add(selectedItem);
+
+            cartBinding.ResetBindings(false);
+        }
+
+        private void makePurchase_Click(object sender, EventArgs e)
+        {
+            // Make each item in the cart as sold
+            // Clear the cart
+            
+            foreach (Item item in shoppingCartData)
+            {
+                item.Sold = true;
+            }
+
+            shoppingCartData.Clear();
+
+            itemsBinding.DataSource = store.Items.Where(x => x.Sold == false).ToList();
+
+            cartBinding.ResetBindings(false);
+            itemsBinding.ResetBindings(false);
         }
     }
 }
